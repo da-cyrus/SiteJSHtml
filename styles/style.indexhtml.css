@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=lato&display=swap');
+body{
+
+    font-family: 'lato', sans-serif;
+    background-color:hotpink;
+    padding: 0%;
+    margin: 0%;
+    color: aliceblue;
+}
+
+.page{
+    margin: 20px 80px;
+
+
+}
+/*Barre de navigation*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0%;
+    background-color: hotpink;
+    padding: 10px 0px;
+}
+
+.onglets {
+    display: flex;
+    width: 70%;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+nav .onglets a{
+    margin-right: 20px;
+    cursor: pointer;
+    }
+
+.buttons {
+    width: 30%;
+    padding: 13px 20px;
+    color: aliceblue;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    outline: none;
+    
+}
+
+nav .buttons .login{
+    background-color: blue;
+    margin-right: 10px;
+    color: #8f8f8f;
+}
+/*fin barre de navigation*/
+
+/*Partie header*/
+
+.page header{
+    margin-top: 40px;
+    background-color: darkmagenta;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px 400px;
+}
+
+header h1{
+    text-align: center;
+    font-size:60px ;
+    padding: 150px;
+}
