@@ -5,30 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.contacthtml.css">
 </head>
 <body>
+   
+    <div class="main">
     <p>Pour tout besoin d'information, veuillez remplir ce formulaire, et nous reviendrons vers vous très bientôt</p>
-    <form action="">
-        <label for="nom">Nom :</label>
-        <input type="text" placeholder="ex : dada" name="nom">
-        <label>prenom :
-            <input type="text" placeholder="ex : totto">
-        </label>
-        <label>
-        <input type="password">
-        <input type="email">
-        <input type="number" name="" id="">
 
-        <input type="button" value="valider">
+     <!--Création du formulaire de contact-->
+
+    <form class="form"  action="">
+        <!--Pour rendre plus jolie et plus remplie crée des sections pour le formulaire, section 1 sur les infos perso-->
+        <fieldset>
+            <legend>Information personnelle</legend>
+                <div>
+                    <label for="nom">Nom:</label><br/>
+                    <input type="text" placeholder="ex : dada" name="nom">
+                </div>
+
+                <div>
+                    <label for="prenom">Prenom:</label><br/>
+                    <input type="text" placeholder="ex : totto">
+                </div>
+
+                <div>
+                     <label for="Numéro">Numéro de téléphone:</label><br/>
+                    <input type="number" placeholder="ex : 0610258574">
+                </div>
+
+                <div>
+                    <label for="Email">Email:</label><br/>
+                    <input type="email" placeholder="ex : dada@yahoo.fr">
+                </div>
+
+        </fieldset>
+
+        <!--Seconde section formulaire par rapport à la demande de l'utilisateur-->
+
+        <fieldset>
+            <legend>Raisons</legend>
+
+        <div>
+            <label for="sexe">Sexe:</label>
+            <select name="sexe" id="sexe">
+                <option value="F" name="sexe">Femme</option>
+                <option value="H" name="sexe">Homme</option>
+                <option value="A" name="sexe">Autre</option>
+            </select><br/>
+        </div>
+
+        <div>
+            <label for="message">Message:</label>
+            <textarea id="message"></textarea>
+            
+        </div>
+
+        </fieldset>
+
+        
         <button type="button">valider</button>
-
-        <input type="radio" name="sexe" value="homme">
-        <input type="radio" name="sexe" value="femme">
-        <input type="radio" name="sexe" value="autre">
-
-        <input type="button" value="Valider">
-        <button type="button">Valider</button>
    
     </form>
+    </div>
 </body>
 </html>

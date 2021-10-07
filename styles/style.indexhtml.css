@@ -2,10 +2,10 @@
 body{
 
     font-family: 'lato', sans-serif;
-    background-color:hotpink;
+    background: color #f6d1d8;;
     padding: 0%;
     margin: 0%;
-    color: aliceblue;
+    color:antiquewhite;
 }
 
 .page{
@@ -16,16 +16,16 @@ body{
 /*Barre de navigation*/
 nav {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     position: sticky;
     top: 0%;
-    background-color: hotpink;
+    background-color:#9370db;
     padding: 10px 0px;
 }
 
 .onglets {
     display: flex;
-    width: 70%;
     flex-wrap: wrap;
     margin-top: 5px;
 }
@@ -36,9 +36,8 @@ nav .onglets a{
     }
 
 .buttons {
-    width: 30%;
     padding: 13px 20px;
-    color: aliceblue;
+    color:whitesmoke;
     border: none;
     font-size: 15px;
     cursor: pointer;
@@ -47,9 +46,9 @@ nav .onglets a{
 }
 
 nav .buttons .login{
-    background-color: blue;
+    background-color:darkorchid;
     margin-right: 10px;
-    color: #8f8f8f;
+    color:white;
 }
 /*fin barre de navigation*/
 
@@ -57,14 +56,43 @@ nav .buttons .login{
 
 .page header{
     margin-top: 40px;
-    background-color: darkmagenta;
-    background-repeat: no-repeat;
+    background:url('https://media1.giphy.com/media/Y4hdOpWNINGdCpn0z3/giphy.gif?cid=790b761161d32378f5b4bcc219e75844bb36344051784850&rid=giphy.gif&ct=g');
+    /*background-position: center;
+    background-size: 400px 400px;*/
     background-position: center;
-    background-size: 400px 400px;
+    background-size: cover;
+    min-height: 100vh;
+    min-width: 100vh;
+    /*height: 100%;
+    width: 100%;*/
 }
 
 header h1{
     text-align: center;
-    font-size:60px ;
+    font: size 100px;
+    padding: 350px;
+    background-position: center;
+    background-size: 70px;
+}
+
+/*Titre de la page*/
+.titre{
+    text-align: center;
+    font: size 100px;
     padding: 150px;
+    background-position: center;
+ 
+}
+
+/*Enfin la dernière partie de la page 1!!!!!!!*/
+footer{
+    background-color: #1a1a1a;
+    padding: 25px 100px;
+    color: #828282;
+}
+
+.colonnes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
